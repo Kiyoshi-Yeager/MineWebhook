@@ -44,8 +44,12 @@ public class webhookCMD implements TabExecutor { // /webhook <list_of_webhooks> 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String s, String[] args) {
         if (args.length == 1) {
-            return config.webHooks;
+            if (!config.webHooks.isEmpty()) {
+                return config.webHooks;
+            } else {
+                return List.of("none webhooks in config");
+            }
         }
-        return List.of("\"message content\"");
+        return List.of("message content...");
     }
 }

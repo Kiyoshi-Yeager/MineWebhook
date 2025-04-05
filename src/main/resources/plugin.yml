@@ -1,4 +1,4 @@
-name: MineWebhooks
+name: MineWebhook
 version: '1.2'
 main: me.pashaVoid.plugin
 api-version: '1.21'
