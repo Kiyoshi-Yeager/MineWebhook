@@ -1,0 +1,27 @@
+webhooks:
+  #test: "webhook_url"
+
+messages:
+  # On /webhook command complete
+  # Когда команда /webhook была выполнена успешно
+  send_complete: "Webhook sent successfully!"
+
+  # On /minewebhook command complete (reload config command)
+  # Когда команда /minewebhook была выполнена успешно (команда для перезагрузки конфига)
+  reload_complete: "Config reloaded successfully!"
+
+  # Insufficient arguments in command
+  # Недостаточно аргументов
+  missing_args: "Insufficient arguments!"
+
+  # Invalid webhook name provided
+  # Неверное имя webhook
+  webhook_invalid_name: "Invalid webhook name!"
+
+  # Webhook sending failed
+  # Ошибка во время отправки webhook
+  webhook_send_failed: "Failed to send webhook!"
+
+  # Insufficient permissions to execute command
+  # Недостаточно прав
+  missing_permissions: "Insufficient permissions!"в!"
