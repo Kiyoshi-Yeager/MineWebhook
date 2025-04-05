@@ -24,4 +24,4 @@ messages:
 
   # Insufficient permissions to execute command
   # Недостаточно прав
-  missing_permissions: "Insufficient permissions!"в!"
+  missing_permissions: "Insufficient permissions!"

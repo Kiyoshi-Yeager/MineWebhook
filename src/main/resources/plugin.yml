@@ -1,29 +1,35 @@
 name: MineWebhooks
-version: '1.0'
+version: '1.2'
 main: me.pashaVoid.plugin
 api-version: '1.21'
 prefix: MineWebhook
 load: STARTUP
 authors: [ PashaVoid ]
-description: Sends chat messages, logs, and server events to Discord in real-time.
-website: com.VanillaXP
+description: Minecraft to webhooks bridge. Integrate with apps via commands
+website: https://www.youtube.com/@pasha-void
+license: MIT
 
 commands:
   webhook:
-    description: "Send a webhook in Discord"
+    description: "Send a pre-configured webhook to Discord"
+    usage: "/webhook <name> text..."
+    aliases: [wh]
+    permission: minewebhook.send
   minewebhook:
-    description: "Reload plugin config"
+    description: "Reload the plugin configuration"
+    usage: "/minewebhook reload"
+    permission: minewebhook.reload
 
 permissions:
   minewebhook.*:
-    description: "Все права для MineWebhook"
+    description: "Grants all permissions for MineWebhooks"
     default: op
     children:
       minewebhook.reload: true
       minewebhook.send: true
   minewebhook.reload:
-    description:
+    description: "Allows reloading the plugin config"
     default: false
   minewebhook.send:
-    description: "Право на отправку вебхука"
+    description: "Allows sending webhooks"
     default: false
