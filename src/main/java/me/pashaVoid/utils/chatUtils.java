@@ -1,7 +1,9 @@
 package me.pashaVoid.utils;
 
+import org.bukkit.ChatColor;
+
 public class chatUtils {
     public static String getModifyChatString(String str) {
-        return str; // TODO
+        return ChatColor.translateAlternateColorCodes('&', str);
     }
 }
